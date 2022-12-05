@@ -1,0 +1,48 @@
+//how to insert if in html react?
+
+
+
+
+
+render() {
+  const isLoggedIn = this.state.isLoggedIn;
+  return (
+    &lt;div&gt;
+      {isLoggedIn ? (
+        &lt;LogoutButton onClick={this.handleLogoutClick} /&gt;
+      ) : (
+        &lt;LoginButton onClick={this.handleLoginClick} /&gt;
+      )}
+    &lt;/div&gt;
+  );
+}
+
+
+if (isLoggedIn) {
+  button = &lt;LogoutButton onClick={this.handleLogoutClick} /&gt;;
+} else {
+  button = &lt;LoginButton onClick={this.handleLoginClick} /&gt;;
+}
+
+return (
+  &lt;div&gt;
+    &lt;Greeting isLoggedIn={isLoggedIn} /&gt;
+    {button}
+  &lt;/div&gt;
+);
+
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Hello!&lt;/h1&gt;
+      {unreadMessages.length &gt; 0 &amp;&amp;
+        &lt;h2&gt;
+          You have {unreadMessages.length} unread messages.
+        &lt;/h2&gt;
+      }
+    &lt;/div&gt;
+  );
+
+
+
+
